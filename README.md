@@ -1,9 +1,24 @@
-# 序言
+# 改动
+
+**——**修改了百度底图不适配黑色背景
+
+**——**修改了百度图片大小
+
+## 原仓库地址
+
+https://github.com/wangluozhe/baiduyx
+
+# 以下为原仓库readme.md
+
+## 序言
+
 昨天我在微信群里面看了一个很有趣的网站，就是输入自己想要输入的问题，然后再帮你生成一个链接，你访问后就自动给你跳转到相应的百度链接上去，这个网站实现并不是很难，只是很有趣而已，所以在这里分享一个自己纯手写的，原生js写出来的“让我帮你百度一下”这个站点，先看看效果图吧！
 
 ![效果图](https://img-blog.csdnimg.cn/2019080110251865.gif)
 上面就是这个网站的效果图，怎么样简单吧。
-# HTML页面
+
+## HTML页面
+
 ```html
 <!DOCTYPE html>
 <!--
@@ -39,7 +54,8 @@
 ![效果图](https://img-blog.csdnimg.cn/20190801104821824.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQyMjc5MDc3,size_16,color_FFFFFF,t_70)
 这个样子是不是很丑，给他加上css样式。
 
-# CSS样式
+## CSS样式
+
 ```html
 <style type="text/css">
 	*{
@@ -155,7 +171,8 @@
 ![效果图](https://img-blog.csdnimg.cn/20190801105057875.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQyMjc5MDc3,size_16,color_FFFFFF,t_70)
 是不是效果完全不一样了，但是仅仅有这两个还不行，还得有鼠标移动动画以及文字一一输出动画和跳转链接动画，所以还得依靠js来实现这几个功能，这样就能完成咱们的这个项目了。
 
-# JS实现功能
+## JS实现功能
+
 ```html
 <script type="text/javascript">
 	// 获取链接并显示在网页上
@@ -245,7 +262,9 @@
 页面带有JS功能：
 ![效果图](https://img-blog.csdnimg.cn/2019080110251865.gif)
 整个结构就是这个样子，js文件中有解释，所以这里就不一一解释了
-# 完整页面源码
+
+##完整页面源码
+
 ```html
 <!DOCTYPE html>
 <!--

@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <!--
     作者：LeeGene
+	二改：douzi
+	仓库地址：https://github.com/dddouzi/baiduyx-fixed
+	原仓库地址：https://github.com/wangluozhe/baiduyx
 -->
 <html>
 	<head>
@@ -56,8 +59,8 @@
 				margin-bottom: 20px;
 			}
 			.baidu{
-				height: 100px;
-				margin-bottom: -20px;
+				height: 50px;
+				margin-bottom: -10px;
 			}
 			#search{
 				width: 537px;
@@ -114,13 +117,20 @@
 					width: calc(100% - 102px);
 				}
 			}
+			.copyright {
+			position: absolute;
+			bottom: 10px;
+			text-align: center;
+			width: 100%;
+			font-size: large;
+			}
 		</style>
 	</head>
 	<body>
 		<img id="arrow" src="img/arrow.png" alt="arrow">
 		<span class="about">?</span>
 		<div class="container">
-			<h1 class="title">需要我帮你<img class="baidu" src="img/baidu_logo.png" alt="百度">么</h1>
+			<h1 class="title">让我帮你<img class="baidu" src="img/baidu_logo.png" alt="百度">一下</h1>
 			<span class="search-container">
 				<input type="text" id="search" />
 				<input type="button" id="get" class="button" value="百度一下" />
@@ -134,6 +144,9 @@
 				</div>
 			</div>
 		</div>
+		<footer class="copyright">
+		开源地址: <a href="https://github.com/wangluozhe/baiduyx">https://github.com/wangluozhe/baiduyx</a>
+		</footer>
 		<script type="text/javascript">
 			// 获取链接并显示在网页上
 			function getLink(){
@@ -205,7 +218,7 @@
 									var get_offsetY = get.offsetTop + 20;	//获取"百度一下"按钮的Y轴位置
 									arrow.style.transform = "translate("+ get_offsetX +"px," + get_offsetY + "px)";
 									setTimeout(function(){
-										instrcutions.innerText = "这对你而言就是这么困难么？";		// 第三层动画结束语
+										instrcutions.innerText = "这对你而言就是这么困难吗？";		// 第三层动画结束语
 									},2000);
 									setTimeout(function(){
 										location.href = "https://www.baidu.com/s?ch=3&ie=utf-8&wd=" + variable;	// 自动跳转到百度搜索界面
